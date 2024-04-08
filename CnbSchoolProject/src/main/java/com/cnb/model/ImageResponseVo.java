@@ -1,7 +1,5 @@
 package com.cnb.model;
 
-import org.springframework.web.multipart.MultipartFile;
-
 public class ImageResponseVo {
 	private String imageName;
 	private String imageDescription;
