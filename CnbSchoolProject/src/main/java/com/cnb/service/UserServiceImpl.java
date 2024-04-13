@@ -1,5 +1,7 @@
 package com.cnb.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +26,11 @@ public class UserServiceImpl implements IUserService {
 		user=userRepo.save(user);
 		userVo.setUserId(user.getUserId());
 		return userVo;
+	}
+	@Override
+	public List<User> getUsers() {
+		List<User> users = userRepo.findAll();
+		return users;
 	}
 
 }
