@@ -10,4 +10,5 @@ public interface IUserService {
 	public UserVo createUser(UserVo userVo);
 
 	public List<User> getUsers();
+	public UserVo updateUser(UserVo userVo) ;
 }
